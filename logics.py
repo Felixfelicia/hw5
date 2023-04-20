@@ -5,7 +5,6 @@ config = configparser.ConfigParser()
 config.read('settings.ini')
 initial_capital = int(config['settings']['MY_MONEY'])
 
-
 def play_slot_machine(capital):
     print(f"Your current capital: {capital}")
     bet = int(input("Choose a slot number (1-30): "))
